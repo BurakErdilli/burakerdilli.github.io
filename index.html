@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Burak Erdilli</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <link href="assets/img/croppedlogo.jpg" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <script>
+        window.onload = function() {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Most Used Creativity Tools",
+                    horizontalAlign: "left",
+
+                },
+                data: [{
+                    type: "doughnut",
+                    startAngle: 240,
+                    innerRadius: 110,
+                    indexLabelFontSize: 17,
+                    indexLabel: "{label} - #percent%",
+                    toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                    dataPoints: [{
+                            y: 40,
+                            label: "Adobe lr & cs6 For Photography"
+                        },
+                        {
+                            y: 20,
+                            label: "Autodesk Fusion 360"
+                        },
+                        {
+                            y: 15,
+                            label: "TeXworks"
+                        },
+                        {
+                            y: 10,
+                            label: "DavinciResolve16"
+                        },
+                        {
+                            y: 5,
+                            label: "Proteus"
+                        },
+
+                    ]
+                }]
+            });
+            chart.render();
+
+        }
+    </script>
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- ======= Header/ Navbar ======= -->
+    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="nav-linknavbar-brand js-scroll " href="#page-top"><img src="assets/img/croppedlogo.png" alt="" width="100" height="100"></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="nav navbar justify-content-md-center">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#service">Certificates</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#blog">Blog/Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#work">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#contact">Contact</a>
+                    </li>
+                    <!--                     <li class="nav-item">
+                        <a class="nav-link js-scroll" href="indextr.html">Türkçe</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ======= Intro Section ======= -->
+    <div id="home" class="intro route bg-image" style="background-image: url(assets/img/bgimg/IMG_2398.jpg)">
+        <div class="overlay-itro"></div>
+        <div class="intro-content display-table">
+            <div class="table-cell">
+                <div class="container">
+                    <!--                    <p class="display-6 color-d">Hello, world!</p>-->
+                    <h1 class="intro-title mb-5 text-white-50">Hello</h1>
+                    <p class="intro-subtitle text-white-50 "><span class="text-slider-items"> Computer Science Student,Web Designer,e-Commercer,Amateur Photographer </span><strong class="text-slider"></strong></p>
+                    <!--                     <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                </div>
+            </div>
+        </div>
+    </div><!-- End Intro Section -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-5">
+                                            <div class="about-img">
+                                                <img src="assets/img/pp1.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-7">
+
+                                            <p><span class="title-s">Name: </span> <span>Burak Erdilli</span></p>
+                                            <p><span class="title-s">Profile: </span> <span>Bachelor student on Computer Science</span></p>
+                                            <p><span class="title-s">Email: </span> <span>berdilli19@gmail.com</span></p>
+
+
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm ">
+                                        <div class="about-info">
+                                            <div id="piechart" class="col-sm"></div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="skill-mf">
+
+
+
+                                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+                                        <script type="text/javascript">
+                                            // Load google charts
+                                            google.charts.load('current', {
+                                                'packages': ['corechart']
+                                            });
+                                            google.charts.setOnLoadCallback(drawChart);
+
+                                            // Draw the chart and set the chart values
+                                            function drawChart() {
+                                                var data = google.visualization.arrayToDataTable([
+                                                    ['Language', 'Percentage'],
+                                                    ['Python3', 46],
+                                                    ['C', 24],
+                                                    ['Java', 17],
+                                                    ['Octave/Matlab', 5],
+                                                    ['SQL', 8]
+                                                ]);
+
+                                                // Optional; add a title and set the width and height of the chart
+                                                var options = {
+                                                    'title': 'Languages Used Most on My Projects',
+
+                                                };
+
+                                                // Display the chart inside the <div> element with id="piechart"
+                                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                                chart.draw(data, options);
+                                            }
+                                        </script>
+                                        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+                                        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-me pt-4 pt-md-0">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">
+                                                About me
+                                            </h5>
+                                        </div>
+                                        <p class="lead">
+
+                                        </p>
+                                        <p class="lead">I am currently studying computer science at YILDIZ Technical University in Istanbul/Turkey since September 2019. Besides pursuing on finishing my education plan successfully I am mastering different areas like finance, e-commerce, 3D designing/printing, and learning other programming languages which can potentially help me in my carrier. Also making progress on things I like such as photography, graphical/footage editing, fitness, building/repairing computer hardware is another essential goal in my life.
+                                        </p>
+
+                                    </div>
+                                    <div class="socials">
+                                        <ul>
+
+                                            <li><a href="https://github.com/BurakErdilli"><span class="ico-circle"><i class="fa fa-github" aria-hidden="true"></i></span></a></li>
+                                            <li><a href="https://www.instagram.com/burakerdilli/?hl=en"><span class="ico-circle"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                                    </span></a></li>
+                                            <li><a href="https://www.linkedin.com/in/burak-erdilli-32aa34113/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                                            <li><a href="mailto:email-berdilli19@gmail.com?cc=email-cc@gmail.com&bcc=email-bcc@gmail.com&subject=Subject Using Mailto.co.uk&body=Email Using Body"><span class="ico-circle"><i class="ion-email"></i></span></a></li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+        <!-- ======= Testimonials Section ======="There is no traffic jam along the extra mile." --Roger Staubach
+                 "If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much." --Jim Rohn
+                 -->
+
+
+
+        <!-- ======= Services Section ======= -->
+        <section id="service" class="services-mf pt-5 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a ">
+                                Certificates & Documents
+                            </h3>
+                            <p class="">
+                                Documentations on some essential sufficiency and my interests.(clickables opens a pdf in new tab)
+                            </p>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/TOEFL_REPORT_2021.pdf" target="_blank"><span class="ico-circle"><i class="ion-android-done-all"></i></span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">TOEFL-ETS</h2>
+                                <p class="s-description text-center">
+                                    Test of English as a Foreign Language is a standardized test to measure the English language ability of non-native speakers wishing to enroll in English-speaking universities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/webdesign.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-css3" aria-hidden="true"></i>
+                                    </span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Front End Web Developing</h2>
+                                <p class="s-description text-center">
+                                    I started a course provided by my University back in march 2019 and therefore I can present this site of mine to you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/Coursera%20LGWT9542849N.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-code-fork" aria-hidden="true"></i>
+                                    </span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title"> Machine Learning</h2>
+                                <p class="s-description text-center">
+                                    Machine learning is the science of getting computers to act without being explicitly programmed.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="blockchain.html" target="_blank"><span class="ico-circle"><i class="fa fa-btc" aria-hidden="true"></i></span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Blockchain Specialization</h2>
+                                <p class="s-description text-center">
+                                    Blockchain is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system. A blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="ion-android-done-all" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">IELTS-(coming soon!)</h2>
+                                <p class="s-description text-center">
+                                    The International English Language Testing System, or IELTS, is an international standardized test of English language proficiency for non-native English language speakers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/Natural%20Language%20Processing.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Natural Language Processing</h2>
+                                <p class="s-description text-center">
+                                    Natural Language Processing (NLP) uses algorithms to understand and manipulate human language. This technology is one of the most broadly applied areas of machine learning.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="fa fa-language" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Goethe Enstitute-(coming soon!)</h2>
+                                <p class="s-description text-center">
+                                    The Goethe-Institut is a non-profit German cultural association operational worldwide with 159 institutes, promoting the study of the German language abroad and encouraging international cultural exchange and relations. Around 246,000 people take part in these German courses per year.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/deeplearning.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-code-fork" aria-hidden="true"></i>
+                                    </span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Neural Networks and Deep Learning</h2>
+                                <p class="s-description text-center">
+                                    Neural networks, a beautiful biologically-inspired programming paradigm which enables a computer to learn from observational data. Deep learning, a powerful set of techniques for learning in neural networks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="phyton.html" target="_blank"><span class="ico-circle"><i class="fa fa-code" aria-hidden="true"></i>
+                                    </span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">phyton developement</h2>
+                                <p class="s-description text-center">
+                                    Python is an interpreted, high-level and general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/MarketingAnalytics.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+
+                                    </span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Marketing Analytics</h2>
+                                <p class="s-description text-center">
+                                    A market analysis studies the attractiveness and the dynamics of a special market within a special industry. It is part of the industry analysis and thus in turn of the global environmental analysis. Through all of these analyses, the strengths, weaknesses, opportunities and threats of a company can be identified.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/dip.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    </span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title"> high school diploma</h2>
+                                <p class="s-description text-center">
+                                    A course which leaves the qualification awarded upon the high school graduation
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/CV.pdf" target="_blank"><span class="ico-circle"><i class="ion-ios-paper"></i></span></a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title"> Current CV</h2>
+                                <p class="s-description text-center">
+                                    Presents a full history of my academic credentials
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- End Services Section -->
+
+
+        <!-- ======= Counter Section ======= --
+
+        <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/frederik-lower-tmUgVN6bCAE-unsplash.jpg)">
+            <div class="overlay-mf"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="counter-box counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                                <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p class="counter">484</p>
+                                <span class="counter-text">bla bla</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                                <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p class="counter">20</p>
+                                <span class="counter-text">YEARS OLD</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                                <span class="ico-circle"><i class="ion-ios-people"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p class="counter">12</p>
+                                <span class="counter-text">Computer Hardware Projects Done</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="counter-box pt-4 pt-md-0">
+                            <div class="counter-ico">
+                                <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+                            </div>
+                            <div class="counter-num">
+                                <p class="counter">4</p>
+                                <span class="counter-text">Years Of blabla </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div><!-- End Counter Section -->
+        <!-- ======= Blog Section ======= -->
+        <section id="blog" class="blog-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a">
+                                Blog
+                            </h3>
+                            <p class="subtitle-a">
+                                More like some of the articles I have published over the years
+                            </p>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <a href="blog-single.html"><img src="assets/img/oppo-find-x-p-696x464mainmain.jpg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        <h6 class="category">Review</h6>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="blog-single.html">Product Report: OPPO FIND X</a></h3>
+                                <p class="card-description">
+
+                                    This review of mine approaches a brand new released smartphone from an entrepreneur point of view.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+
+                                <div class="post-date">
+                                    <span class="ion-ios-clock-outline"></span> 7 min
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <a href="blog-single2.html"><img src="assets/img/jordan.jpg" alt="" class="img-fluid"></a>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        <h6 class="category">Analysis</h6>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="blog-single2.html">Introducing Jordan Peterson</a></h3>
+                                <p class="card-description">
+                                    This article reviews the interview video of Jordan Peterson on Entrepreneurship.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+
+                                <div class="post-date">
+                                    <span class="ion-ios-clock-outline"></span> 10 min
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-blog">
+                            <div class="card-img">
+                                <img src="assets/img/Wireless_deployment.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <div class="card-category-box">
+                                    <div class="card-category">
+                                        <h6 class="category">Artıcle</h6>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="assets/pdf/wsn_lx.pdf" target="_blank">Wireless Sensor Networks</a></h3>
+                                <p class="card-description">
+                                    This article of me and my friends breaks down wireless sensor networks down to details.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+
+                                <div class="post-date">
+                                    <span class="ion-ios-clock-outline"></span> 18 min
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-category-box col-md-12 m-2 p-2">
+                        <div class="card-category">
+                            <a href="blogs.html">
+                                <h5 class="text-light btn btn-primary ">More Blogs </h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section><!-- End Blog Section -->
+
+        <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/WisdomvsKnowledge_1000x700_jpg_OHVUvmTo.jpg)">
+            <div class="overlay-mf"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="testimonial-mf" class="owl-carousel owl-theme">
+                            <div class="testimonial-box">
+                                <div class="author-test">
+                                    <span class="author">-Jim Rohn</span>
+                                </div>
+                                <div class="content-test">
+                                    <p class="description lead">
+                                        "If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much."
+                                    </p>
+                                    <span class="comit "><i class="fa fa-quote-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="testimonial-box">
+                                <div class="author-test">
+                                    <span class="author"> -Mark Twain</span>
+                                </div>
+                                <div class="content-test">
+                                    <p class="description lead">
+                                        "Whenever you find yourself on the side of the majority, it is time to pause and reflect."
+                                    </p>
+                                    <span class="comit"><i class="fa fa-quote-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="testimonial-box">
+                                <div class="author-test">
+                                    <span class="author"> -Steve Jobs</span>
+                                </div>
+                                <div class="content-test">
+                                    <p class="description lead">
+                                        "You can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something your gut, destiny, life, karma, whatever. This approach has never let me down, and it has made all the difference in my life."
+                                    </p>
+                                    <span class="comit"><i class="fa fa-quote-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="testimonial-box">
+                                <div class="author-test">
+                                    <span class="author"> -Roger Staubach</span>
+                                </div>
+                                <div class="content-test">
+                                    <p class="description lead">
+                                        "There is no traffic jam along the extra mile."
+                                    </p>
+                                    <span class="comit"><i class="fa fa-quote-right"></i></span>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Testimonials Section -->
+        <!-- ======= Portfolio Section ======= -->
+        <section id="work" class="portfolio-mf sect-pt4 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a">
+                                Photo Gallery
+                            </h3>
+                            <p class="subtitle-a">
+                                Some of the photos I have taken over the years w/Canon EOS 250D
+                            </p>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="night.html">
+                                <div class="work-img">
+                                    <img src="assets/img/night/IMG_0671.jpg" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Night Photography</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Gallery</span> / <span class="w-date">30 Sep. 2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="land.html">
+                                <div class="work-img">
+                                    <img src="assets/img/landscape/IMG_2289.jpg" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Landscape/Street Photography</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Gallery</span> / <span class="w-date">6 Oct. 2020</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="work-box">
+                            <a href="portret.html">
+                                <div class="work-img">
+                                    <img src="assets/img/portrait/IMG_1553.jpg" alt="" class="img-fluid">
+                                </div>
+                            </a>
+                            <div class="work-content">
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <h2 class="w-title">Portrait/Close Up Photography</h2>
+                                        <div class="w-more">
+                                            <span class="w-ctegory">Galery</span> / <span class="w-date">18 Sep. 2018</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+
+
+
+
+
+
+        <!-- ======= Contact Section ======= -->
+        <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/5a5af93b19cd4be5ba8ce4cc27467856.jpg.1920x1080_q100_crop-scale_optimize_upscale.jpg)">
+            <div class="overlay-mf"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="contact-mf">
+                            <div id="contact" class="box-shadow-full ">
+<!--
+                                <div class="row bg ">
+                                    <div class="col-md-6">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">
+                                                Current Setup
+                                            </h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12">
+
+                                        <div class="more-info">
+
+                                            <ul class="list-ico">
+                                                <li> Intel Core i5 6600K Socket 1151 3.5GHz 6MB Cache 14nm Skylake Processor</li>
+                                                <li> Asus GeForce GTX970 ROG STRIX GDDR5 4GB 256Bit DX12 NVIDIA Graphics Card</li>
+                                                <li> 16Gb Ram Corsair Vengeance 2133 MHz DDR4</li>
+                                                <li> 1Tb Hdd 7200 Rpm & 256 Gb 500MB-450MB/S 2.5" Sata 3 SSD</li>
+                                                <li> Acer XF240QS 23.6" 165Hz 1ms (HDMI+Display) FreeSync Full HD Pivot Monitor</li>
+                                                <li> JamesDonkey 610 Mechanical Keyboard</li>
+                                                <li> LOGITECH G300s Mouse </li>
+                                                <li> Snopy Rampage RW-1 Headset</li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="socials">
+                                            <ul>
+                                                                                                <li><a href="https://steamcommunity.com/id/18206772576349439199766367/"><span class="ico-circle"><i class="fa fa-steam" aria-hidden="true"></i></span></a></li>
+                                                <li><a href="https://github.com/BurakErdilli"><span class="ico-circle"><i class="fa fa-github" aria-hidden="true"></i></span></a></li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+-->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="title-box-2">
+                                            <h5 class="title-left">
+                                                Contact Me
+                                            </h5>
+                                        </div>
+                                        
+
+                                    </div>
+                                    <div class="col-md-12">
+
+                                        <div class="more-info">
+                                            <p class="lead">
+                                                You can contact me anytime about anything. You can email me directly, the email adress is down below.
+                                            </p>
+                                            <ul class="list-ico">
+                                                <li><span class="ion-ios-location"></span>
+                                                    ISTANBUL-Turkey</li>
+                                                <!--                                                <li><span class="ion-ios-telephone"></span> +90 545 274 77 71</li>-->
+                                                <li><span class="ion-email"></span>berdilli19@gmail.com</li>
+                                            </ul>
+                                        </div>
+                                        <div class="socials">
+                                            <ul>
+
+                                                <li><a href="https://www.instagram.com/burakerdilli/?hl=en"><span class="ico-circle"><i class="fa fa-instagram" aria-hidden="true"></i>
+                                                        </span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/burak-erdilli-32aa34113/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                                                <li><a href="mailto:email-berdilli19@gmail.com?cc=email-cc@gmail.com&bcc=email-bcc@gmail.com&subject=Subject Using Mailto.co.uk&body=Email Using Body"><span class="ico-circle"><i class="ion-email"></i></span></a></li>
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p class="copyright">&copy; Copyright <strong>burakerdilli</strong>. All Rights Reserved</p>
+                        <div class="credits">
+
+                            Designed by <a href="https://bootstrapmade.com/">Burak Erdilli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+
+    <script src="assets/js/main.js"></script>
+
+</body></html>
