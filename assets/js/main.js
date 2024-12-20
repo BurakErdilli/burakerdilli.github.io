@@ -48,9 +48,28 @@
   });
 
   /*--/ Star Counter /--*/
-  $('.counter').counterUp({
-    delay: 15,
-    time: 2000
+  async function fetchIMDbRatingsCount() {
+    try {
+      // Replace 'YOUR-IMDB-USER-ID' with your actual IMDb user ID
+      const response = await fetch('https://imdb-api.com/en/API/UserRatings/YOUR-API-KEY/YOUR-IMDB-USER-ID');
+      const data = await response.json();
+      if (data && data.totalRatings) {
+        $('.counter').text(data.totalRatings);
+      }
+    } catch (error) {
+      console.error('Error fetching IMDb ratings:', error);
+    }
+  }
+
+  $('.counter').each(function() {
+    if ($(this).closest('.counter-num').find('.counter-text').text().includes('Movies Watched')) {
+      fetchIMDbRatingsCount();
+    } else {
+      $(this).counterUp({
+        delay: 15,
+        time: 2000
+      });
+    }
   });
 
   /*--/ Star Scrolling nav /--*/
