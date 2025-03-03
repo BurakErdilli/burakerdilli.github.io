@@ -21,11 +21,101 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom Styling -->
+    <style>
+        .button-link {
+            display: inline-block;
+            padding: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #f8f9fa, #ffe0b3);
+            color: #856404;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(135deg, #ffe0b3, #f8f9fa);
+        }
+
+        .button-link:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .note-box {
+            background: linear-gradient(135deg, #f8f9fa, #ffe0b3);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #000000;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .image-caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .links ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .links li {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #e83e8c;
+        }
+
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+            color: #333;
+        }
+
+        .section-divider {
+            border-top: 1px solid #dee2e6;
+            margin: 40px 0;
+        }
+
+    </style>
 </head>
 
-
 <body id="page-top">
-    <!-- ======= Header/ Navbar ======= -->
     <!-- ======= Header/ Navbar ======= -->
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" style="background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1)35%);" id="mainNav">
         <div class="container">
@@ -45,11 +135,6 @@
         </div>
     </nav>
 
-
-
-
-
-
     <!-- ======= Intro Section ======= -->
     <div class="intro route bg-image" style="background-image: url(assets/img/bgimg/ubuntu_bg.png)">
         <div class="overlay-mf" style="background-color: rgba(0, 0, 0, 4);"></div>
@@ -62,7 +147,6 @@
         </div>
     </div>
 
-
     <main id="main">
         <!-- ======= Blog Single Section ======= -->
         <section class="blog-wrapper sect-pt4" id="blog">
@@ -71,7 +155,6 @@
                     <div class="col-md-12">
                         <div class="post-box">
                             <div class="post-meta">
-
                                 <h1 class="article-title">Hardware Project Report: Server Setup and Configuration</h1>
                                 <ul>
                                     <li>
@@ -81,81 +164,37 @@
                                 </ul>
 
                                 <!-- Modern Links Section -->
-<div class="links" style="margin: 20px 0; padding: 10px;">
-    <ul style="margin: 0; padding: 0; list-style-type: none;">
-        <li style="margin-bottom: 10px;">
-            <a href="https://github.com/BurakErdilli/ecommerce-server-automation" class="button-link" target="_blank" 
-               style="display: inline-block; padding: 10px 20px; margin: 5px 0; background-color: #007BFF; color: black; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">
-                Project Repository (Scripts & Read Me)
-            </a>
-        </li>
-        <li style="margin-bottom: 10px;">
-            <a href="assets/pdf/Documentation.pdf" class="button-link" target="_blank" 
-               style="display: inline-block; padding: 10px 20px; margin: 5px 0; background-color: #007BFF; color: black; text-decoration: none; border-radius: 5px; transition: background-color 0.3s;">
-                Detailed Documentation PDF
-            </a>
-        </li>
-    </ul>
-</div>
-
-
-                                <!-- CSS for button styling -->
-                                <style>
-                                    .links ul {
-                                        list-style: none;
-                                        padding: 0;
-                                    }
-
-                                    .button-link {
-                                        display: inline-block;
-                                        padding: 20px;
-                                        font-size: 16px;
-                                        font-weight: bold;
-                                        text-align: center;
-                                        text-decoration: none;
-                                        border-radius: 8px;
-                                        background: linear-gradient(135deg, #f8f9fa, #ffe0b3);
-                                        /* Custom gradient */
-                                        color: #856404;
-                                        /* Text color */
-                                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                                        margin-top: 20px;
-                                        transition: all 0.3s ease-in-out;
-                                    }
-
-                                    .button-link:hover {
-                                        transform: translateY(-4px);
-                                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-                                        background: linear-gradient(135deg, #ffe0b3, #f8f9fa);
-                                        /* Reverse gradient on hover */
-                                    }
-
-                                    .button-link:active {
-                                        transform: translateY(2px);
-                                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                                    }
-
-                                </style>
-
-
-
+                                <div class="links" style="margin: 20px 0; padding: 10px;">
+                                    <ul>
+                                        <li>
+                                            <a href="https://github.com/BurakErdilli/ecommerce-server-automation" class="button-link" target="_blank">
+                                                Project Repository (Scripts & Read Me)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="assets/pdf/Documentation.pdf" class="button-link" target="_blank">
+                                                Detailed Documentation PDF
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
 
                                 <div class="article-content">
                                     <p>This project involved setting up a <strong>home server</strong> with automated deployment of microservices and custom Python scripts to manage an e-commerce platform on <strong>Trendyol</strong>. The server was optimized for performance and scalability, with automation scripts handling routine tasks such as inventory updates and product price adjustments. Additionally, the setup includes a personal cloud solution (Nextcloud), media streaming services, and local usage of large language models (LLMs).</p>
 
                                     <h3>Motivation</h3>
-                                    <p>This project was driven by a deep belief in <strong>freedom</strong> and <strong>self-reliance</strong>. I’ve always been intrigued by the concept of <strong>self-hosting</strong>, where I have full control over my data without relying on external services. This aligns with my principle of <strong>digital sovereignty</strong> and avoiding vendor lock-in.</p>
+                                    <p>This project was driven by a deep belief in <strong>freedom</strong> and <strong>self-reliance</strong>. I've always been intrigued by the concept of <strong>self-hosting</strong>, where I have full control over my data without relying on external services. This aligns with my principle of <strong>digital sovereignty</strong> and avoiding vendor lock-in.</p>
 
                                     <blockquote class="blockquote">
-                                        <p class="mb-0">“I am a firm believer that if you give users freedom, they will solve their own problems in ways you never thought of.” – Linus Torvalds</p>
+                                        <p class="mb-0">"I am a firm believer that if you give users freedom, they will solve their own problems in ways you never thought of." – Linus Torvalds</p>
                                     </blockquote>
 
                                     <p>In addition to the self-hosting aspect, I wanted to explore the complexities of <strong>microservices</strong> and the challenge of deploying secure, efficient setups on constrained hardware. My <strong>interest in hardware</strong> played a big role in this, as I was able to <em>tinker with and repurpose older systems</em>, pushing them to their limits while learning about <strong>networking</strong>, <strong>Dockerization</strong>, and <strong>resource optimization</strong>.</p>
 
                                     <p>This project also served as a <strong>playground</strong> to deepen my understanding of modern technology stacks, while satisfying my <em>curiosity and passion</em> for creating efficient, resilient, and scalable systems.</p>
 
-                                    <div style="background: linear-gradient(135deg, #f8f9fa, #ffe0b3); padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); color: #000000; font-weight: bold; margin-top: 20px;">
-                                        <strong>Note:</strong> The hardware used is quite outdated and was specifically chosen to test and learn about services and configurations. This setup isn’t intended for heavy computational tasks but for exploring networking, resource management, and scaling on constrained systems.
+                                    <div class="note-box">
+                                        <strong>Note:</strong> The hardware used is quite outdated and was specifically chosen to test and learn about services and configurations. This setup isn't intended for heavy computational tasks but for exploring networking, resource management, and scaling on constrained systems.
                                     </div>
 
                                     <p>In the future, a complete transition to dedicated hardware will be discussed, including detailed specifications and hardware selection.</p>
@@ -201,9 +240,9 @@
                                         </li>
                                     </ul>
 
-                                    <div style="text-align:center; margin: 20px 0;">
-                                        <img src="assets/img/harmony/devices.png" alt="Network Topology" style="max-width: 80%; height: auto;">
-                                        <p style="margin-top: 10px; font-style: italic; color: #555;">Network topology illustrating the connections between the devices and their roles in the home office setup.</p>
+                                    <div class="image-container">
+                                        <img src="assets/img/harmony/devices.png" alt="Network Topology">
+                                        <p class="image-caption">Network topology illustrating the connections between the devices and their roles in the home office setup.</p>
                                     </div>
 
                                     <h3>Hardware Setup</h3>
@@ -212,6 +251,8 @@
                                             <ul>
                                                 <li>Type-C hub with USB and charging passthrough (Device #2 has a single Type-C port).</li>
                                                 <li>USB to Gigabit Ethernet adapter (Type-C port supports Gigabit speeds).</li>
+                                                <li>Both devices are connected to the main switch, which is connected to the primary modem.</li>
+                                                <li>Both devices are continuously powered via adapters, consuming a total of 60-70W (Device #1) and 15-20W (Device #2), with an average power consumption of <strong>42-55W.</strong></li>
                                             </ul>
                                         </li>
                                         <li><strong>External Storage</strong>:
@@ -225,8 +266,8 @@
                                     <h3>Network Configuration</h3>
                                     <strong>Ethernet Connection:</strong>
                                     <ul>
-                                        <li>Device #2 uses a USB to Gigabit Ethernet adapter, though the bottleneck arises from the Type-C port’s 5Gbps limit.</li>
-                                        <li>Device #1’s old-generation 100 Mbit Ethernet port is limited in speed, used mainly for cron jobs and scripts.</li>
+                                        <li>Device #2 uses a USB to Gigabit Ethernet adapter, though the bottleneck arises from the Type-C port's 5Gbps limit.</li>
+                                        <li>Device #1's old-generation 100 Mbit Ethernet port is limited in speed, used mainly for cron jobs and scripts.</li>
                                         <li>A static IP was configured for consistent LAN access.</li>
                                     </ul>
 
@@ -234,6 +275,14 @@
                                     <ul>
                                         <li>Network adapter compatibility was verified for remote power management.</li>
                                         <li>Wake-on-LAN was enabled for easy remote management.</li>
+                                    </ul>
+                                    <strong>Additional Configurations:</strong>
+                                    <ul>
+                                        <li>Bandwidth monitoring with `nload`.</li>
+                                        <li>Servers were configured using <strong>Ubuntu Server</strong> with <strong>Docker</strong> to deploy and manage microservices.</li>
+                                        <li>Wattage monitoring.</li>
+                                        <li>Cron jobs for system upgrades and routine hibernation tasks.</li>
+                                        <li>Installed lm-sensors for monitoring hardware health (CPU temperature, memory usage).</li>
                                     </ul>
 
                                     <h3>Microservices Deployment</h3>
@@ -246,7 +295,7 @@
 
                                     <h3>E-commerce Automation for Trendyol</h3>
                                     <ul>
-                                        <li><strong>Python Scripts for Automation</strong>: Developed to automate tasks like inventory management and price adjustments via Trendyol’s API. Scheduled tasks for ongoing updates.</li>
+                                        <li><strong>Python Scripts for Automation</strong>: Developed to automate tasks like inventory management and price adjustments via Trendyol's API. Scheduled tasks for ongoing updates.</li>
                                         <li>Scripts include:
                                             <ul>
                                                 <li><strong>Price Adjustment</strong>: Automatically updates product prices based on criteria.</li>
@@ -273,16 +322,167 @@
                                     </ul>
 
                                     <h3>Documentation & Repository</h3>
-                                    <p>For more details, refer to the <a href="https://github.com/yourusername/project-repo">GitHub Repository</a>, which includes the README, installation steps, Python scripts, FastAPI app files, and full documentation.</p>
+                                    <p>For more details, refer to the <a href="https://github.com/BurakErdilli/ecommerce-server-automation">GitHub Repository</a>, which includes the README, installation steps, Python scripts, FastAPI app files, and full documentation.</p>
                                 </div>
 
+                                <div class="section-divider"></div>
+
+                                <!-- Second Project Section -->
+                                <h1 class="article-title">Trendyol Platform Automation Tool</h1>
+
+
+                                <div class="article-content">
+                                    <p>Trendyol Platform Automation Tool is a powerful application designed to streamline e-commerce management on <strong>Trendyol</strong> through custom Python scripts and a user-friendly interface. Built with the <code>customtkinter</code> library, it automates tasks such as product pricing, commissions, coupons, specials, and flash sales, offering drag-and-drop functionality, real-time logging, and a responsive design.</p>
+
+        
+
+                                    <p>This tool serves as a <strong>playground</strong> to explore modern UI design and automation techniques, satisfying my curiosity and passion for building efficient, user-friendly systems tailored for e-commerce automation.</p>
+
+                                    <h3>Features</h3>
+                                    <ul>
+                                        <li><strong>Star Pricing</strong>: Adjust product prices based on star ratings with customizable net cost and discount thresholds.</li>
+                                        <li><strong>Specials</strong>: Manage special campaign data (placeholder functionality to be expanded).</li>
+                                        <li><strong>Coupons</strong>: Process product files to determine coupon eligibility based on price ranges.</li>
+                                        <li><strong>Commissions</strong>: Optimize commission structures by updating prices based on profit margins.</li>
+                                        <li><strong>Flash Sales</strong>: Update flash sale prices with flexible gap parameters.</li>
+                                        <li><strong>Responsive UI</strong>: Tabs and content adapt to window size, with fixed tab positions for easy navigation.</li>
+                                        <li><strong>Real-Time Logging</strong>: View processing details in a dedicated log pane and save logs to files.</li>
+                                        <li><strong>Image Support</strong>: Display menu-specific images that resize dynamically while preserving aspect ratio.</li>
+                                    </ul>
+
+                                    <div class="image-container">
+                                        <img src="assets/img/harmony/dashboard.png" alt="Trendyol Automation Tool Interface">
+                                        <p class="image-caption">The user interface of the Trendyol Platform Dashboard Tool</p>
+                                    </div>
+
+                                    <h3>Installation</h3>
+                                    <ol>
+                                        <li><strong>Clone the Repository</strong>:
+                                            <pre><code>git clone https://github.com/BurakErdilli/ecommerce-server-automation</code></pre>
+                                        </li>
+                                        <li><strong>Set Up a Virtual Environment</strong>:
+                                            <pre><code>python -m venv venv</code></pre>
+                                        </li>
+                                        <li><strong>Activate the Virtual Environment</strong>:
+                                            <ul>
+                                                <li>On Windows: <code>.\venv\Scripts\activate</code></li>
+                                                <li>On macOS/Linux: <code>source venv/bin/activate</code></li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Install Dependencies</strong>:
+                                            <pre><code>pip install -r requirements.txt</code></pre>
+                                            <p><em>Note</em>: Create a <code>requirements.txt</code> file with the following content if not already present:</p>
+                                            <pre><code>customtkinter
+tkinterdnd2
+pandas
+numpy
+openpyxl
+Pillow</code></pre>
+                                        </li>
+                                        <li><strong>Prepare Assets</strong>:
+                                            <ul>
+                                                <li>Place menu images (<code>menu1.png</code> to <code>menu5.png</code>) in the <code>assets/img/</code> directory.</li>
+                                                <li>Ensure images are approximately 1600-1700x200 pixels for optimal display.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+
+                                    <h3>Usage</h3>
+                                    <ol>
+                                        <li><strong>Run the Application</strong>:
+                                            <pre><code>python .\main.py</code></pre>
+                                            <p>Launches with a dark-themed interface and five tabs: "Avantajlı Ürün Etiketleri", "Kampanyalar", "Kuponlarım", "Ürün Komisyon Tarifeleri", and "Flaş Ürünler".</p>
+                                        </li>
+                                        <li><strong>Navigate Tabs</strong>:
+                                            <p>Click tab headers to switch functionalities. Tabs are fixed for consistent navigation.</p>
+                                        </li>
+                                        <li><strong>Drag and Drop Files</strong>:
+                                            <p>Drag an appropriate <code>.xlsx</code> file (e.g., "Urunler.xlsx" for Coupons) into the drop zone. The file path appears in the listbox with a success or error message.</p>
+                                        </li>
+                                        <li><strong>Adjust Parameters</strong>:
+                                            <p>Modify fields (e.g., "Net Cost Gap", "Min Price") as needed. Defaults are pre-filled.</p>
+                                        </li>
+                                        <li><strong>Process Data</strong>:
+                                            <p>Click the "Process" button (e.g., "Process Coupons") to execute. Results save to <code>avantajliurun</code> or <code>kuponlar</code> directories, with real-time log updates.</p>
+                                        </li>
+                                        <li><strong>Resize Window</strong>:
+                                            <p>Resize to test responsiveness. Content adjusts, while tabs and status bar remain fixed.</p>
+                                        </li>
+                                        <li><strong>Close Application</strong>:
+                                            <p>Click "Close" or use the window's close button. Logs save to output files.</p>
+                                        </li>
+                                    </ol>
+
+                                    <div class="note-box">
+                                        <strong>Note:</strong> For production use, ensure your product data files are backed up before processing, as the tool modifies the original data structure for optimization purposes.
+                                    </div>
+
+                                    <h3>File Structure</h3>
+                                    <pre><code>trendyolPlatform/
+├── avantajliFiyat/
+│   ├── apps/
+│   │   ├── main.py
+│   │   ├── starPricing.py
+│   │   ├── specials.py
+│   │   ├── coupons.py
+│   │   ├── commissions.py
+│   │   └── flash.py
+│   ├── assets/
+│   │   └── img/
+│   │       ├── menu1.png
+│   │       ├── menu2.png
+│   │       ├── menu3.png
+│   │       ├── menu4.png
+│   │       └── menu5.png
+│   ├── venv/  (Virtual environment)
+│   ├── requirements.txt
+│   └── README.md</code></pre>
+
+                                    <h3>Configuration</h3>
+                                    <ul>
+                                        <li><strong>Log Files</strong>: Saved as <code>star_pricing_script_output.log</code>, <code>specials_script_output.log</code>, <code>coupons_script_output.log</code>, <code>commissions_script_output.log</code>, and <code>flash_script_output.log</code> in the <code>apps</code> directory.</li>
+                                        <li><strong>Output Directories</strong>: Processed files save to <code>avantajliurun</code> (pricing, commissions, flash) or <code>kuponlar</code> (coupons).</li>
+                                        <li><strong>Images</strong>: Customize <code>menuX.png</code> files in <code>assets/img/</code> to match your branding.</li>
+                                    </ul>
+
+                                    <h3>Troubleshooting</h3>
+                                    <ul>
+                                        <li><strong>Tabs Hard to Press</strong>: Ensure minimum window size (800x600). Verify <code>tab_view</code> width (1180) fits your resolution.</li>
+                                        <li><strong>Image Not Found</strong>: Confirm <code>menuX.png</code> files are in <code>assets/img/</code>. Logs will indicate missing images.</li>
+                                        <li><strong>Dependency Errors</strong>: Install all packages via <code>pip install -r requirements.txt</code>.</li>
+                                    </ul>
+
+                                    <h3>Contributing</h3>
+                                    <p>Fork this repository, submit issues, or create pull requests to enhance the tool. Contributions for features, bug fixes, or UI improvements are welcome!</p>
+
+                                    <h3>License</h3>
+                                    <p>This project is licensed under the MIT License. See the <code>LICENSE</code> file for details.</p>
+
+                                    <h3>Contact</h3>
+                                    <p>For support or questions, contact <a href="mailto:burak.erdilli@example.com">burak.erdilli@example.com</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="copyright-box">
+                            <p class="copyright">&copy; Copyright <strong>burakerdilli</strong>. All Rights Reserved</p>
+                            <div class="credits">
+                                Designed by <a href="https://github.com/BurakErdilli/burakerdilli.github.io" target="_blank">Burak Erdilli</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <!-- Vendor JS Files -->
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+    <script src="assets/vendor/jquery/

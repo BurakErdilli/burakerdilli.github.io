@@ -5,130 +5,132 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Burak Erdilli</title>
-    <meta content="" name="descriptison">
-    <meta content="" name="keywords">
+    <title>Burak Erdilli | Portfolio</title>
+    <meta content="Personal portfolio website of Burak Erdilli, Computer Science graduate and photography enthusiast" name="description">
+    <meta content="portfolio, computer science, photography, web development, machine learning" name="keywords">
 
+    <!-- Favicon -->
     <link href="assets/img/croppedlogo.jpg" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+    <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <!-- Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
+    <!-- Chart scripts -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script>
         window.onload = function() {
-
             var chart = new CanvasJS.Chart("chartContainer", {
                 animationEnabled: true,
+                backgroundColor: "transparent",
                 title: {
-                    text: "Most Used Creativity Tools",
-                    horizontalAlign: "left",
-
+                    text: "Programming Languages",
+                    fontColor: "#666",
+                    fontFamily: "'Open Sans', sans-serif",
+                    fontWeight: "normal"
                 },
                 data: [{
                     type: "doughnut",
                     startAngle: 240,
-                    innerRadius: 110,
-                    indexLabelFontSize: 17,
+                    innerRadius: 60,
+                    indexLabelFontSize: 14,
                     indexLabel: "{label} - #percent%",
                     toolTipContent: "<b>{label}:</b> {y} (#percent%)",
                     dataPoints: [{
-                            y: 40,
-                            label: "Adobe lr & cs6 For Photography"
+                            y: 45,
+                            label: "Python",
+                            color: "#3776AB"
                         },
                         {
-                            y: 20,
-                            label: "Autodesk Fusion 360"
+                            y: 25,
+                            label: "C/C++",
+                            color: "#00599C"
                         },
                         {
                             y: 15,
-                            label: "TeXworks"
+                            label: "Java",
+                            color: "#f89820"
                         },
                         {
                             y: 10,
-                            label: "DavinciResolve16"
+                            label: "JavaScript",
+                            color: "#F7DF1E"
                         },
                         {
                             y: 5,
-                            label: "Proteus"
-                        },
-
+                            label: "SQL",
+                            color: "#4479A1"
+                        }
                     ]
                 }]
             });
             chart.render();
-
         }
 
     </script>
-
-
 </head>
 
 <body id="page-top">
-
-    <!-- ======= Header/ Navbar ====== -->
-    <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <!-- Navigation -->
+    <nav class="navbar navbar-b navbar-expand-md fixed-top navbar-dark" id="mainNav">
         <div class="container">
-            <a class="nav-linknavbar-brand js-scroll " href="#page-top"><img src="assets/img/croppedlogo.png" alt="" width="100" height="100"></a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
+            <a class="navbar-brand js-scroll" href="#page-top">
+                <img src="assets/img/croppedlogo.png" alt="Burak Erdilli Logo" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
-                <ul class="nav navbar justify-content-md-center">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll active" href="index.html">Home</a>
+                        <a class="nav-link js-scroll active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#service">Certificates</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#blog">Blog/Articles</a>
+                        <a class="nav-link js-scroll" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#work">Gallery</a>
+                        <a class="nav-link js-scroll" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#contact">Contact</a>
                     </li>
-                    <!--                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="indextr.html">Türkçe</a>
-                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- ======= Intro Section ======= -->
+    <!-- Hero Section -->
     <div id="home" class="intro route bg-image" style="background-image: url(assets/img/bgimg/IMG_2398.jpg)">
         <div class="overlay-itro"></div>
         <div class="intro-content display-table">
             <div class="table-cell">
-                <div class="container">
-                    <!--                    <p class="display-6 color-d">Hello, world!</p>-->
-                    <h1 class="intro-title mb-5 text-white-50">Hello </h1>
-                    <p class="intro-subtitle text-white-50 "><span class="text-slider-items"> Computer Science Student,Cinephile,Amateur Photographer, </span><strong class="text-slider"></strong></p>
-                    <!--                     <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+                <div class="container" style="opacity: 0.5;">
+                    <h1 class="intro-title mb-4">Burak Erdilli</h1>
+                    <p class="intro-subtitle"><span class="text-slider-items">Computer Science Graduate, Machine Learning Enthusiast, Photography Lover, Cinephile</span><strong class="text-slider"></strong></p>
                 </div>
+
             </div>
         </div>
-    </div><!-- End Intro Section -->
+    </div>
 
     <main id="main">
-
-        <!-- ======= About Section ======= -->
+        <!-- About Section -->
         <section id="about" class="about-mf sect-pt4 route">
             <div class="container">
                 <div class="row">
@@ -137,69 +139,62 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <div class="col-12 col-md-5">
+                                        <div class="col-sm-6 col-md-5">
                                             <div class="about-img">
-                                                <img src="assets/img/pp1.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                                                <img src="assets/img/pp1.jpg" class="img-fluid rounded" alt="Burak Erdilli">
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-7">
-                                            <p><span class="title-s">Name: </span> <span>Burak Erdilli</span></p>
-                                            <p><span class="title-s">Profile: </span> <span>Bachelor student in Computer Science</span></p>
-                                            <p><span class="title-s">Email: </span> <span>berdilli19@gmail.com</span></p>
+                                        <div class="col-sm-6 col-md-7">
+                                            <div class="about-info">
+                                                <p><span class="title-s">Name: </span> <span>Burak Erdilli</span></p>
+                                                <p><span class="title-s">Profile: </span> <span>Computer Science Graduate</span></p>
+                                                <p><span class="title-s">Email: </span> <span>berdilli19@gmail.com</span></p>
+                                                <p><span class="title-s">Location: </span> <span>Istanbul, Turkey</span></p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <!--
-                                    <div class="col-12">
-                                        <div class="about-info">
-                                            <div id="piechart" class="col-12"></div>
-                                        </div>
+                                    <div class="skill-mf mt-4">
+                                        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
                                     </div>
--->
-                                    <!--
-                                    <div class="skill-mf">
-                                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                                        <script type="text/javascript">
-                                            google.charts.load('current', {
-                                                'packages': ['corechart']
-                                            });
-                                            google.charts.setOnLoadCallback(drawChart);
-
-                                            function drawChart() {
-                                                var data = google.visualization.arrayToDataTable([
-                                                    ['Language', 'Percentage'],
-                                                    ['Python3', 46],
-                                                    ['C', 24],
-                                                    ['Java', 17],
-                                                    ['Octave/Matlab', 5],
-                                                    ['SQL', 8]
-                                                ]);
-                                                var options = {
-                                                    'title': 'Languages Used Most on My Projects'
-                                                };
-                                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                                                chart.draw(data, options);
-                                            }
-
-                                        </script>
-                                        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-                                        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-                                    </div>
--->
                                 </div>
                                 <div class="col-md-6">
                                     <div class="about-me pt-4 pt-md-0">
                                         <div class="title-box-2">
-                                            <h5 class="title-left">About me</h5>
+                                            <h5 class="title-left">About Me</h5>
                                         </div>
-                                        <p class="lead">I have recently graduated from Yıldız Technical University in Istanbul, Turkey. Throughout my academic journey, I have developed proficiency in various programming languages. In addition to my technical skills, I am dedicated to advancing my hobbies, which include photography, playing the electric guitar, simracing, and boxing. I also have a strong interest in graphical editing, building computers, and staying informed about the latest trends in computer hardware.</p>
-                                    </div>
-                                    <div class="socials">
-                                        <ul class="list-unstyled d-flex justify-content-center">
-                                            <li class="mx-2"><a href="https://github.com/BurakErdilli" target="_blank" rel="noopener noreferrer"><span class="ico-circle"><i class="ion-social-github" aria-hidden="true"></i></span></a></li>
-                                            <li class="mx-2"><a href="https://www.instagram.com/burakerdilli/?hl=en" target="_blank" rel="noopener noreferrer"><span class="ico-circle"><i class="ion-social-instagram" aria-hidden="true"></i></span></a></li>
-                                            <li class="mx-2"><a href="https://www.linkedin.com/in/burak-erdilli-32aa34113/" target="_blank" rel="noopener noreferrer"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-                                            <li class="mx-2"><a href="mailto:berdilli19@gmail.com?subject=Subject&body=Message" target="_blank" rel="noopener noreferrer"><span class="ico-circle"><i class="ion-email"></i></span></a></li>
-                                        </ul>
+                                        <p class="lead">
+                                            I recently graduated from Yıldız Technical University in Istanbul, Turkey with a degree in Computer Science. Throughout my academic journey, I've developed proficiency in various programming languages and technologies.
+                                        </p>
+                                        <p class="lead">
+                                            My technical interests include machine learning, natural language processing, and full-stack development. I'm particularly passionate about applying AI to solve real-world problems.
+                                        </p>
+                                        <p class="lead">
+                                            Beyond technology, I'm dedicated to my hobbies which include photography, playing electric guitar, simracing, and boxing. I also enjoy building computers and staying informed about the latest trends in hardware.
+                                        </p>
+                                        <div class="socials mt-4">
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                    <a href="https://github.com/BurakErdilli" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                                        <i class="fab fa-github"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="https://www.instagram.com/burakerdilli/?hl=en" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="https://www.linkedin.com/in/burak-erdilli-32aa34113/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                                        <i class="fab fa-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="mailto:berdilli19@gmail.com" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                                        <i class="fas fa-envelope"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -207,25 +202,75 @@
                     </div>
                 </div>
             </div>
-        </section><!-- End About Section -->
+        </section>
 
-        <!-- ======= Testimonials Section ======="There is no traffic jam along the extra mile." --Roger Staubach
-                 "If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much." --Jim Rohn
-                 -->
-
-
-
-        <!-- ======= Services Section ======= -->
-        <section id="service" class="services-mf pt-5 route">
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section sect-pt4 route">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="title-box text-center">
-                            <h3 class="title-a ">
-                                Certificates & Documents
+                            <h3 class="title-a">Skills & Expertise</h3>
+                            <p class="subtitle-a">Technical and professional competencies</p>
+                            <div class="line-mf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="fas fa-code"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Programming</h2>
+                                <p class="s-description">
+                                    Proficient in Python, C/C++, Java, and JavaScript. Experienced in developing web applications, algorithms, and data structures with a focus on clean, maintainable code.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="fas fa-brain"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Machine Learning</h2>
+                                <p class="s-description">
+                                    Experience with supervised and unsupervised learning algorithms, neural networks, and deep learning frameworks including TensorFlow and PyTorch for computer vision applications.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <span class="ico-circle"><i class="fas fa-database"></i></span>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Data Analysis</h2>
+                                <p class="s-description">
+                                    Skilled in data manipulation, visualization, and analysis using Python libraries like Pandas, NumPy, and Matplotlib. Experience with SQL and database management.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="services-mf pt-5 route">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="title-box text-center">
+                            <h3 class="title-a">
+                                Certificates & Credentials
                             </h3>
-                            <p class="">
-                                Documentations on some essential sufficiency and my interests.(clickables opens a pdf in new tab)
+                            <p class="subtitle-a">
+                                Professional certifications and academic achievements
                             </p>
                             <div class="line-mf"></div>
                         </div>
@@ -235,12 +280,14 @@
                     <div class="col-md-4">
                         <div class="service-box">
                             <div class="service-ico">
-                                <a href="assets/pdf/toefl.pdf" target="_blank"><span class="ico-circle"><i class="ion-android-done-all"></i></span></a>
+                                <a href="assets/pdf/toefl.pdf" target="_blank">
+                                    <span class="ico-circle"><i class="fas fa-language"></i></span>
+                                </a>
                             </div>
                             <div class="service-content">
-                                <h2 class="s-title">TOEFL-ETS</h2>
+                                <h2 class="s-title">TOEFL Certification</h2>
                                 <p class="s-description text-center">
-                                    Test of English as a Foreign Language is a standardized test to measure the English language ability of non-native speakers wishing to enroll in English-speaking universities.
+                                    Certified proficiency in English language skills, demonstrating advanced reading, writing, speaking, and listening abilities for academic environments.
                                 </p>
                             </div>
                         </div>
@@ -248,13 +295,14 @@
                     <div class="col-md-4">
                         <div class="service-box">
                             <div class="service-ico">
-                                <a href="assets/pdf/webdesign.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-code" aria-hidden="true"></i>
-                                    </span></a>
+                                <a href="assets/pdf/Coursera%20LGWT9542849N.pdf" target="_blank">
+                                    <span class="ico-circle"><i class="fas fa-robot"></i></span>
+                                </a>
                             </div>
                             <div class="service-content">
-                                <h2 class="s-title">Front End Web Developing</h2>
+                                <h2 class="s-title">Machine Learning</h2>
                                 <p class="s-description text-center">
-                                    I started a course provided by my University back in march 2019 and therefore I can present this site of mine to you.
+                                    Comprehensive training in machine learning algorithms, techniques, and applications with hands-on projects in classification, regression, and clustering.
                                 </p>
                             </div>
                         </div>
@@ -262,173 +310,68 @@
                     <div class="col-md-4">
                         <div class="service-box">
                             <div class="service-ico">
-                                <a href="assets/pdf/Coursera%20LGWT9542849N.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-code-fork" aria-hidden="true"></i>
-                                    </span></a>
-                            </div>
-                            <div class="service-content">
-                                <h2 class="s-title"> Machine Learning</h2>
-                                <p class="s-description text-center">
-                                    Machine learning is the science of getting computers to act without being explicitly programmed.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--
-                    <div class="col-md-4">
-                        <div class="service-box">
-                            <div class="service-ico">
-                                <a href="blockchain.html" target="_blank"><span class="ico-circle"><i class="fa fa-btc" aria-hidden="true"></i></span></a>
-                            </div>
-                            <div class="service-content">
-                                <h2 class="s-title">Blockchain Specialization</h2>
-                                <p class="s-description text-center">
-                                    Blockchain is a system of recording information in a way that makes it difficult or impossible to change, hack, or cheat the system. A blockchain is essentially a digital ledger of transactions that is duplicated and distributed across the entire network of computer systems on the blockchain.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
--->
-
-                    <!--
-                    <div class="col-md-4">
-                        <div class="service-box">
-                            <div class="service-ico">
-                                <span class="ico-circle"><i class="ion-android-done-all" aria-hidden="true"></i>
-                                </span>
-                            </div>
-                            <div class="service-content">
-                                <h2 class="s-title">IELTS-(coming soon!)</h2>
-                                <p class="s-description text-center">
-                                    The International English Language Testing System, or IELTS, is an international standardized test of English language proficiency for non-native English language speakers.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
--->
-
-
-                    <!--
-
--->
-
-
-
-                </div>
-                <div class="row">
-                    <!--
-                    <div class="col-md-4">
-                        <div class="service-box">
-                            <div class="service-ico">
-                                <span class="ico-circle"><i class="fa fa-language" aria-hidden="true"></i></span>
-                            </div>
-                            <div class="service-content">
-                                <h2 class="s-title">Goethe Enstitute-(coming soon!)</h2>
-                                <p class="s-description text-center">
-                                    The Goethe-Institut is a non-profit German cultural association operational worldwide with 159 institutes, promoting the study of the German language abroad and encouraging international cultural exchange and relations. Around 246,000 people take part in these German courses per year.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
--->
-                    <!--
-                    <div class="col-md-4">
-                        <div class="service-box">
-                            <div class="service-ico">
-                                <a href="assets/pdf/deeplearning.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-code-fork" aria-hidden="true"></i>
-                                    </span></a>
-                            </div>
-                            <div class="service-content">
-                                <h2 class="s-title">Neural Networks and Deep Learning</h2>
-                                <p class="s-description text-center">
-                                    Neural networks, a beautiful biologically-inspired programming paradigm which enables a computer to learn from observational data. Deep learning, a powerful set of techniques for learning in neural networks.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
--->
-
-                    <div class="col-md-4">
-                        <div class="service-box">
-                            <div class="service-ico">
-                                <a href="phyton.html" target="_blank"><span class="ico-circle"><i class="fa fa-code" aria-hidden="true"></i>
-                                    </span></a>
-                            </div>
-                            <div class="service-content">
-                                <h2 class="s-title">phyton developement</h2>
-                                <p class="s-description text-center">
-                                    Python is an interpreted, high-level and general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--
-                    <div class="col-md-4">
-                        <div class="service-box">
-                            <div class="service-ico">
-                                <a href="assets/pdf/MarketingAnalytics.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-bar-chart" aria-hidden="true"></i>
-
-                                    </span></a>
-                            </div>
-                            <div class="service-content">
-                                <h2 class="s-title">Marketing Analytics</h2>
-                                <p class="s-description text-center">
-                                    A market analysis studies the attractiveness and the dynamics of a special market within a special industry. It is part of the industry analysis and thus in turn of the global environmental analysis. Through all of these analyses, the strengths, weaknesses, opportunities and threats of a company can be identified.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
--->
-                    <div class="col-md-4">
-                        <div class="service-box">
-                            <div class="service-ico">
-                                <a href="assets/pdf/dip.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                    </span></a>
-                            </div>
-                            <div class="service-content">
-                                <h2 class="s-title"> high school diploma</h2>
-                                <p class="s-description text-center">
-                                    A course which leaves the qualification awarded upon the high school graduation
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="service-box">
-                            <div class="service-ico">
-                                <a href="assets/pdf/lang_proc.pdf" target="_blank"><span class="ico-circle"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span></a>
+                                <a href="assets/pdf/lang_proc.pdf" target="_blank">
+                                    <span class="ico-circle"><i class="fas fa-comment-alt"></i></span>
+                                </a>
                             </div>
                             <div class="service-content">
                                 <h2 class="s-title">Natural Language Processing</h2>
                                 <p class="s-description text-center">
-                                    Natural Language Processing (NLP) uses algorithms to understand and manipulate human language. This technology is one of the most broadly applied areas of machine learning.
+                                    Specialized training in NLP techniques including text analysis, sentiment analysis, and language understanding models using modern AI approaches.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <!--
+                </div>
+                <div class="row mt-4">
                     <div class="col-md-4">
                         <div class="service-box">
                             <div class="service-ico">
-                                <a href="assets/pdf/CV_EN.pdf" target="_blank"><span class="ico-circle"><i class="ion-ios-paper"></i></span></a>
+                                <a href="assets/pdf/webdesign.pdf" target="_blank">
+                                    <span class="ico-circle"><i class="fas fa-code"></i></span>
+                                </a>
                             </div>
                             <div class="service-content">
-                                <h2 class="s-title"> Current CV</h2>
+                                <h2 class="s-title">Web Development</h2>
                                 <p class="s-description text-center">
-                                    Presents a full history of my academic credentials
+                                    Training in modern front-end development techniques including responsive design, interactive UI elements, and optimization practices.
                                 </p>
                             </div>
                         </div>
                     </div>
--->
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="assets/pdf/dip.pdf" target="_blank">
+                                    <span class="ico-circle"><i class="fas fa-graduation-cap"></i></span>
+                                </a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Computer Science Degree</h2>
+                                <p class="s-description text-center">
+                                    Bachelor's degree in Computer Science from Yıldız Technical University, with a focus on software engineering and AI technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box">
+                            <div class="service-ico">
+                                <a href="phyton.html" target="_blank">
+                                    <span class="ico-circle"><i class="fab fa-python"></i></span>
+                                </a>
+                            </div>
+                            <div class="service-content">
+                                <h2 class="s-title">Python Development</h2>
+                                <p class="s-description text-center">
+                                    Advanced training in Python programming for data science, web development, and application development with modern frameworks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-        </section><!-- End Services Section -->
-
-
-
+        </section>
 
         <!-- Section with background image -->
         <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/1jofyu3ugsiz.jpeg)">
@@ -466,22 +409,17 @@
             </div>
         </div>
 
-
-
-
-
-
-        <!-- ======= Blog Section ======= -->
-        <section id="blog" class="blog-mf sect-pt4 route">
+        <!-- Projects Section -->
+        <section id="projects" class="blog-mf sect-pt4 route">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="title-box text-center">
                             <h3 class="title-a">
-                                Blog
+                                Projects & Research
                             </h3>
                             <p class="subtitle-a">
-                                Some of the Projects I've made/contributed.
+                                Recent work and academic contributions
                             </p>
                             <div class="line-mf"></div>
                         </div>
@@ -489,116 +427,103 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card card-blog">
+                        <div class="card card-blog h-100">
                             <div class="card-img">
-                                <img src="assets/img/bgimg/d36vw34-8b94a6d9-83bb-41eb-aa8b-6f4f249336cf.png" alt="" class="img-fluid">
+                                <img src="assets/img/bgimg/d36vw34-8b94a6d9-83bb-41eb-aa8b-6f4f249336cf.png" alt="Server Deployment" class="img-fluid">
                             </div>
-                            <div class="card-body">
-                                <div class="card-category-box">
+                            <div class="card-body d-flex flex-column">
+                                <div class="card-category-box mb-3">
                                     <div class="card-category">
-                                        <h6 class="category">Report</h6>
+                                        <h6 class="category">DevOps</h6>
                                     </div>
                                 </div>
                                 <h3 class="card-title"><a href="blog-ubuntu-server.html" target="_blank">
-                                        Home Office Server Deployment and Automation for E-commerce </a></h3>
-                                <p class="card-description">
-                                    The Home Office Server Deployment project uses automated microservices and Python scripts to manage an e-commerce platform on Trendyol, handling tasks like inventory updates and price adjustments. It leverages older hardware, integrating solutions like Nextcloud, media streaming, and local large language models for enhanced performance and scalability.
+                                        Home Office Server Deployment for E-commerce
+                                    </a></h3>
+                                <p class="card-description flex-grow-1">
+                                    An automated microservices solution using Python scripts to manage an e-commerce platform, handling tasks like inventory updates and price adjustments with integrated services for enhanced performance.
                                 </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#">
+                                <div class="card-footer">
+                                    <div class="post-author">
                                         <img src="assets/img/vesika%20kare.jpg" alt="" class="avatar rounded-circle">
                                         <span class="author">Burak Erdilli</span>
-                                    </a>
-                                </div>
-
-                                <div class="post-date">
-                                    <span class="ion-ios-clock-outline"></span> 25 min
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card card-blog">
-                            <div class="card-img">
-                                <a href="blog-single2.html"><img src="assets/img/bgimg/Brain-Network-Connectome-The-fiber-tractography-DWI-structural-connections-are-used.png" alt="" class="img-fluid"></a>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-category-box">
-                                    <div class="card-category">
-                                        <h6 class="category">Article</h6>
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="fas fa-clock"></span> 25 min read
                                     </div>
                                 </div>
-                                <h3 class="card-title"><a href="assets/pdf/USK2022 Bildiri.pdf" target="_blank">Interhemispheric asymmetry in the human brain connectome</a></h3>
-                                <p class="card-description">
-                                    This article reviews Interhemispheric asymmetry in the human brain connectome: Quantitative analysis of association tracts using diffusion tractography.
-                                </p>
                             </div>
-                            <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-blog h-100">
+                            <div class="card-img">
+                                <img src="assets/img/bgimg/Brain-Network-Connectome-The-fiber-tractography-DWI-structural-connections-are-used.png" alt="Brain Network" class="img-fluid">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <div class="card-category-box mb-3">
+                                    <div class="card-category">
+                                        <h6 class="category">Research</h6>
+                                    </div>
+                                </div>
+                                <h3 class="card-title"><a href="assets/pdf/USK2022 Bildiri.pdf" target="_blank">
+                                        Interhemispheric Asymmetry in Brain Connectome
+                                    </a></h3>
+                                <p class="card-description flex-grow-1">
+                                    A detailed analysis of interhemispheric asymmetry in the human brain using diffusion tractography to quantify association tracts and explore neurological implications.
+                                </p>
+                                <div class="card-footer">
+                                    <div class="post-author">
                                         <img src="assets/img/vesika%20kare.jpg" alt="" class="avatar rounded-circle">
                                         <span class="author">Burak Erdilli</span>
-                                    </a>
-                                </div>
-
-                                <div class="post-date">
-                                    <span class="ion-ios-clock-outline"></span> 20 min
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="fas fa-clock"></span> 20 min read
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-4">
-                        <div class="card card-blog">
+                        <div class="card card-blog h-100">
                             <div class="card-img">
-                                <img src="assets/img/bgimg/1_RUEV3Kbxl8_vF0KumHSZkA.png" alt="" class="img-fluid">
+                                <img src="assets/img/bgimg/1_RUEV3Kbxl8_vF0KumHSZkA.png" alt="Cell Detection" class="img-fluid">
                             </div>
-                            <div class="card-body">
-                                <div class="card-category-box">
+                            <div class="card-body d-flex flex-column">
+                                <div class="card-category-box mb-3">
                                     <div class="card-category">
-                                        <h6 class="category">Report</h6>
+                                        <h6 class="category">AI</h6>
                                     </div>
                                 </div>
                                 <h3 class="card-title"><a href="assets/pdf/final_thesis.pdf" target="_blank">
-                                        Detection of Cell Types in Full Slice Ocular Images Using Deep
-                                        Learning Networks
-
-
+                                        Cell Type Detection in Ocular Images Using YOLO
                                     </a></h3>
-                                <p class="card-description">
-                                    YOLOV8 model trained using image and annotation data across 18 different cell classes
-                                    After testing, the model is entegrated into a mobile application using REACT.
+                                <p class="card-description flex-grow-1">
+                                    Development of a YOLO-based deep learning model for detecting 18 different cell types in ocular images, integrated into a mobile application using React Native.
                                 </p>
-                            </div>
-                            <div class="card-footer">
-                                <div class="post-author">
-                                    <a href="#">
+                                <div class="card-footer">
+                                    <div class="post-author">
                                         <img src="assets/img/vesika%20kare.jpg" alt="" class="avatar rounded-circle">
                                         <span class="author">Burak Erdilli</span>
-                                    </a>
-                                </div>
-                                <div class="post-date">
-                                    <span class="ion-ios-clock-outline"></span> 20 min
+                                    </div>
+                                    <div class="post-date">
+                                        <span class="fas fa-clock"></span> 20 min read
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="card-category-box col-md-12 m-2 p-2">
-                        <div class="card-category">
-                            <a href="blogs.html">
-                                <h5 class="text-light btn btn-primary ">More Blogs </h5>
-                            </a>
-                        </div>
+                </div>
+                <div class="row mt-4 mb-4">
+                    <div class="col-12 text-center">
+                        <a href="blogs.html" class="btn btn-primary btn-lg">View All Projects</a>
                     </div>
-
                 </div>
 
-
             </div>
-        </section><!-- End Blog Section -->
+        </section>
 
+        <!-- Quote Section -->
         <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/bgimg/478024.jpg)">
             <div class="overlay-mf"></div>
             <div class="container">
@@ -606,58 +531,55 @@
                     <div class="col-md-12">
                         <div id="testimonial-mf" class="owl-carousel owl-theme">
                             <div class="testimonial-box">
-                                <div class="author-test">
-                                    <span class="author">-Jim Rohn</span>
-                                </div>
                                 <div class="content-test">
                                     <p class="description lead">
                                         "If you don't design your own life plan, chances are you'll fall into someone else's plan. And guess what they have planned for you? Not much."
                                     </p>
-                                    <span class="comit "><i class="fa fa-quote-right"></i></span>
+                                    <span class="comit"><i class="fa fa-quote-right"></i></span>
+                                </div>
+                                <div class="author-test">
+                                    <span class="author">- Jim Rohn</span>
                                 </div>
                             </div>
                             <div class="testimonial-box">
-                                <div class="author-test">
-                                    <span class="author"> -Mark Twain</span>
-                                </div>
                                 <div class="content-test">
                                     <p class="description lead">
                                         "Whenever you find yourself on the side of the majority, it is time to pause and reflect."
                                     </p>
                                     <span class="comit"><i class="fa fa-quote-right"></i></span>
                                 </div>
-                            </div>
-
-                            <div class="testimonial-box">
                                 <div class="author-test">
-                                    <span class="author"> -Carl Sagan</span>
+                                    <span class="author">- Mark Twain</span>
                                 </div>
+                            </div>
+                            <div class="testimonial-box">
                                 <div class="content-test">
                                     <p class="description lead">
                                         "Our universe gives life only a brief moment to shine - a haven in time, safe from its fiery birth and icy death."
                                     </p>
                                     <span class="comit"><i class="fa fa-quote-right"></i></span>
                                 </div>
+                                <div class="author-test">
+                                    <span class="author">- Carl Sagan</span>
+                                </div>
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div><!-- End Testimonials Section -->
-        <!-- ======= Portfolio Section ======= -->
-        <section id="work" class="portfolio-mf sect-pt4 route">
+        </div>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="portfolio-mf sect-pt4 route">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="title-box text-center">
                             <h3 class="title-a">
-                                Photo Gallery
+                                Photography Portfolio
                             </h3>
                             <p class="subtitle-a">
-                                Some of the photos I have taken over the years w/Canon EOS 250D
+                                Selected images captured with Canon EOS 250D
                             </p>
                             <div class="line-mf"></div>
                         </div>
@@ -666,75 +588,79 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="work-box">
-                            <a href="night.html">
+                            <a href="night.html" class="gallery-link">
                                 <div class="work-img">
-                                    <img src="assets/img/night/IMG_0671.jpg" alt="" class="img-fluid">
+                                    <img src="assets/img/night/IMG_0671.jpg" alt="Night Photography" class="img-fluid">
                                 </div>
-                            </a>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Night Photography</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Gallery</span> / <span class="w-date">30 Sep. 2020</span>
+                                <div class="work-content">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <h2 class="w-title">Night Photography</h2>
+                                            <div class="w-more">
+                                                <span class="w-ctegory">Gallery</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="w-like">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
-
-                                    </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-
                     <div class="col-md-4">
                         <div class="work-box">
-                            <a href="land.html">
+                            <a href="land.html" class="gallery-link">
                                 <div class="work-img">
-                                    <img src="assets/img/landscape/IMG_2289.jpg" alt="" class="img-fluid">
+                                    <img src="assets/img/landscape/IMG_2289.jpg" alt="Landscape Photography" class="img-fluid">
                                 </div>
-                            </a>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Landscape/Street Photography</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Gallery</span> / <span class="w-date">6 Oct. 2020</span>
+                                <div class="work-content">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <h2 class="w-title">Landscape Photography</h2>
+                                            <div class="w-more">
+                                                <span class="w-ctegory">Gallery</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="w-like">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-
                     <div class="col-md-4">
                         <div class="work-box">
-                            <a href="portret.html">
+                            <a href="portret.html" class="gallery-link">
                                 <div class="work-img">
-                                    <img src="assets/img/portrait/IMG_1553.jpg" alt="" class="img-fluid">
+                                    <img src="assets/img/portrait/IMG_1553.jpg" alt="Portrait Photography" class="img-fluid">
                                 </div>
-                            </a>
-                            <div class="work-content">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2 class="w-title">Portrait/Close Up Photography</h2>
-                                        <div class="w-more">
-                                            <span class="w-ctegory">Galery</span> / <span class="w-date">18 Sep. 2018</span>
+                                <div class="work-content">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <h2 class="w-title">Portrait Photography</h2>
+                                            <div class="w-more">
+                                                <span class="w-ctegory">Gallery</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="w-like">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
-        <!-- End Portfolio Section -->
-
 
 
 
@@ -803,17 +729,16 @@
                                             <ul class="list-ico">
                                                 <li><span class="ion-ios-location"></span>
                                                     ISTANBUL-Turkey</li>
-                                                <!--                                                <li><span class="ion-ios-telephone"></span> +90 545 274 77 71</li>-->
                                                 <li><span class="ion-email"></span>berdilli19@gmail.com</li>
                                             </ul>
                                         </div>
                                         <div class="socials">
                                             <ul>
 
-                                                <li><a href="https://www.instagram.com/burakerdilli/?hl=en"><span class="ico-circle"><i class="ion-social-instagram" aria-hidden="true"></i>
+                                                <li><a href="https://www.instagram.com/burakerdilli/?hl=en" target="_blank"><span class="ico-circle"><i class="ion-social-instagram" aria-hidden="true"></i>
                                                         </span></a></li>
-                                                <li><a href="https://www.linkedin.com/in/burak-erdilli-32aa34113/"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
-                                                <li><a href="mailto:email-berdilli19@gmail.com?cc=email-cc@gmail.com&bcc=email-bcc@gmail.com&subject=Subject Using Mailto.co.uk&body=Email Using Body"><span class="ico-circle"><i class="ion-email"></i></span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/burak-erdilli-32aa34113/" target="_blank"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                                                <li><a href="mailto:email-berdilli19@gmail.com?cc=email-cc@gmail.com&bcc=email-bcc@gmail.com&subject=Subject Using Mailto.co.uk&body=Email Using Body" target="_blank"><span class="ico-circle"><i class="ion-email"></i></span></a></li>
 
 
                                             </ul>
@@ -839,7 +764,7 @@
                         <p class="copyright">&copy; Copyright <strong>burakerdilli</strong>. All Rights Reserved</p>
                         <div class="credits">
 
-                            Designed by <a href="https://bootstrapmade.com/">Burak Erdilli</a>
+                            Designed by <a href="https://github.com/BurakErdilli/burakerdilli.github.io" target="_blank">Burak Erdilli</a>
                         </div>
                     </div>
                 </div>
