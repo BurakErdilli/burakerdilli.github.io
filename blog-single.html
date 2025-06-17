@@ -2,38 +2,248 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Burak Erdilli</title>
-    <meta content="" name="descriptison">
-    <meta content="" name="keywords">
+    <title>Burak Erdilli - Blog Detail</title>
+    <meta content="OPPO FIND X 2021 product review by Burak Erdilli" name="description" />
+    <meta content="Burak Erdilli, OPPO FIND X, Smartphone Review, Tech" name="keywords" />
 
     <!-- Favicons -->
-    <link href="" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-    <!-- =======================================================
+    <style>
+        body {
+            background-color: #121416;
+            color: #ccc;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+        nav.navbar {
+            background-color: #222831;
+        }
+
+        nav.navbar .navbar-brand,
+        nav.navbar .nav-link {
+            color: #f0f0f0;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav.navbar .nav-link:hover,
+        nav.navbar .nav-link.active {
+            color: #3498db;
+        }
+
+        /* Intro Section */
+        .intro-single.route.bg-image {
+            background-position: center;
+            background-size: cover;
+            height: 220px;
+            position: relative;
+        }
+
+        .overlay-mf {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(34, 40, 49, 0.8);
+            z-index: 1;
+        }
+
+        .intro-content {
+            position: relative;
+            z-index: 2;
+            color: #f0f0f0;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background: transparent;
+            justify-content: center;
+        }
+
+        .breadcrumb-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .breadcrumb-item.active {
+            color: #ccc;
+        }
+
+        /* Main container */
+        main#main {
+            padding: 40px 15px 60px;
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Project card style */
+        .project-card {
+            background: #222831;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            max-width: 720px;
+            width: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+        }
+
+        .card-img {
+            overflow: hidden;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-category-box {
+            margin-bottom: 15px;
+        }
+
+        .card-category {
+            background-color: #3498db;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 0.9rem;
+            user-select: none;
+        }
+
+        .card-title {
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            color: #f0f0f0;
+        }
+
+        .card-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .card-title a:hover {
+            color: #5dade2;
+        }
+
+        .card-description {
+            color: #ccc;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            white-space: pre-line;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        .post-author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .post-author img.avatar {
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .post-date {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .post-date .fa-clock {
+            color: #3498db;
+        }
+
+        /* Footer */
+        footer {
+            background: #222831;
+            padding: 15px 0;
+            text-align: center;
+            color: #bbb;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            padding: 10px 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: background 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background: #2874a6;
+        }
+    </style>
 </head>
 
 <body id="page-top">
-
-    <!-- ======= Header/ Navbar ======= -->
+    <!-- ======= Header/Navbar ======= -->
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll" href="#page-top">Burak Erdilli</a>
@@ -57,7 +267,7 @@
                         <a class="nav-link js-scroll" href="index.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="index.html">Blog/Aticles</a>
+                        <a class="nav-link js-scroll" href="index.html">Blog/Articles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="index.html">Contact</a>
@@ -67,107 +277,88 @@
         </div>
     </nav>
 
-    <div class="intro intro-single route bg-image" style="background-image: url(assets/img/BLOG-FOTTTO.jpg)">
-        <div class="overlay-mf"></div>
-        <div class="intro-content display-table">
-            <div class="table-cell">
-                <div class="container">
-                    <h2 class="intro-title mb-4">Blog Details</h2>
-                    <ol class="breadcrumb d-flex justify-content-center">
-                        <li class="breadcrumb-item">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="#">Library</a>
-                        </li>
-                        <li class="breadcrumb-item active">Data</li>
-                    </ol>
+    <!-- ======= Intro Section ======= -->
+    <section class="intro-section bg-image" style="background-image: url(assets/img/BLOG-FOTTTO.jpg);">
+        <div class="overlay"></div>
+        <div class="intro-content-wrapper">
+            <h2 class="intro-title">Blog Details</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+
+    <main id="main">
+        <div class="project-card">
+            <div class="card-img">
+                <img src="assets/img/oppo-find-x-p-696x464mainmain.jpg" alt="OPPO FIND X 2021 smartphone" loading="lazy" />
+            </div>
+            <div class="card-body d-flex flex-column">
+                <div class="card-category-box mb-3">
+                    <div class="card-category">Product Review</div>
+                </div>
+                <h3 class="card-title">
+                    OPPO FIND X 2021 - A Gamechanger in Smartphone Design
+                </h3>
+                <p class="card-description flex-grow-1" style="
+        color: #ccc; 
+        font-size: 1rem; 
+        line-height: 1.6; 
+        margin-bottom: 18px;
+        white-space: pre-line;
+      ">
+                    Samsung invests a significant amount of money each year on advertising campaigns that focus on criticizing Apple's iPhone rather than promoting its own Galaxy phones. However, despite the iPhone being sold for over a decade, Samsung continues to sell tens of millions of phones annually. The real challengers to mobile market sales worldwide are Chinese Android manufacturers like Huawei, Xiaomi, and OnePlus. Oppo, a serious competitor to the top brands in the market, made its largest foray outside of China with the innovative Find X in 2018.
+                </p>
+                <p>
+                    Recently, OPPO launched their latest flagship smartphone, the OPPO FIND X 2. Nearly two years ago, the first model of the FIND X series was released, which transformed the viewpoint and expectations of the majority in the smartphone market. Therefore, this review will concentrate on the inception of the FIND X series. </p>
+                <p>
+                    The FIND X series introduced the first mechanical implementation that achieved an impressive screen-to-body ratio of 93.8%, which revolutionized the smartphone market. This innovation came in response to the release of the iPhone X on November 3rd, 2017, which prompted major brands such as Asus, Xiaomi, LG, Huawei, Motorola, General Mobile, and Samsung to develop designs with reduced black bars at the top and bottom of the screen for a clearer and more user-friendly interface.
+
+
+
+                </p>
+                <blockquote class="blockquote">
+                    <p class="mb-0">“Dare to be different.”</p>
+                </blockquote>
+                <p>
+                    The aforementioned manufacturers were unable to achieve a completely bezel-less design due to the placement of the front-facing camera and sensors. Their solution was to incorporate a small notch at the top of the screen to house the necessary components. Subsequently, a plethora of similar designs have emerged in the market.
+
+
+
+                <p>
+                    The OPPO FIND X introduced the concept of collecting everything inside a notch and hiding it behind a mechanically moving platform, which also served as a design element. This feature was initially viewed as vulnerable due to its newness in design. There were concerns about the protective cases and the durability of the motorized platform.
+
+
+
+                </p>
+                <p>
+                    In addition to its innovative design, the OPPO FIND X also boasted impressive hardware specs. It was powered by the top-of-the-line Qualcomm Snapdragon 845 processor in 2018, with 8GB of RAM and 256GB of storage. It featured a dual SIM tray, VOOC fast charging technology, a 3730mAh battery, a 20MP+16MP dual camera on the back, and a 25MP front camera. Notably, the device's fast charging technology set a new standard for charging speed and paved the way for even more advanced versions, such as those found in the OPPO FIND X 2. </p>
+                <div class="card-footer">
+                    <div class="post-author">
+                        <img src="assets/img/vesika%20kare.jpg" alt="Burak Erdilli avatar" class="avatar" loading="lazy" />
+                        <span class="author">Burak Erdilli</span>
+                    </div>
+                    <div class="post-date">
+                        <span class="fa fa-clock" aria-hidden="true"></span> 8 min read
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <main id="main">
-
-        <!-- ======= Blog Single Section ======= -->
-        <section class="blog-wrapper sect-pt4" id="blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="post-box">
-                            <div class="post-thumb">
-                                <img src="assets/img/oppo-find-x-p-696x464mainmain.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="post-meta">
-                                <h1 class="article-title">Product Report: OPPO FIND X 2021</h1>
-                                <ul>
-                                    <li>
-                                        <span class="ion-ios-person"></span>
-                                        <a href="#">Burak Erdilli</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <div class="article-content">
-                                <p>
-                                    Samsung invests a significant amount of money each year on advertising campaigns that focus on criticizing Apple's iPhone rather than promoting its own Galaxy phones. However, despite the iPhone being sold for over a decade, Samsung continues to sell tens of millions of phones annually. The real challengers to mobile market sales worldwide are Chinese Android manufacturers like Huawei, Xiaomi, and OnePlus. Oppo, a serious competitor to the top brands in the market, made its largest foray outside of China with the innovative Find X in 2018.
-                                </p>
-                                <p>
-                                    Recently, OPPO launched their latest flagship smartphone, the OPPO FIND X 2. Nearly two years ago, the first model of the FIND X series was released, which transformed the viewpoint and expectations of the majority in the smartphone market. Therefore, this review will concentrate on the inception of the FIND X series. </p>
-                                <p>
-                                    The FIND X series introduced the first mechanical implementation that achieved an impressive screen-to-body ratio of 93.8%, which revolutionized the smartphone market. This innovation came in response to the release of the iPhone X on November 3rd, 2017, which prompted major brands such as Asus, Xiaomi, LG, Huawei, Motorola, General Mobile, and Samsung to develop designs with reduced black bars at the top and bottom of the screen for a clearer and more user-friendly interface.
-
-
-
-                                </p>
-                                <blockquote class="blockquote">
-                                    <p class="mb-0">“Dare to be different.”</p>
-                                </blockquote>
-                                <p>
-                                    The aforementioned manufacturers were unable to achieve a completely bezel-less design due to the placement of the front-facing camera and sensors. Their solution was to incorporate a small notch at the top of the screen to house the necessary components. Subsequently, a plethora of similar designs have emerged in the market.
-
-
-
-                                <p>
-                                    The OPPO FIND X introduced the concept of collecting everything inside a notch and hiding it behind a mechanically moving platform, which also served as a design element. This feature was initially viewed as vulnerable due to its newness in design. There were concerns about the protective cases and the durability of the motorized platform.
-
-
-
-                                </p>
-                                <p>
-                                    In addition to its innovative design, the OPPO FIND X also boasted impressive hardware specs. It was powered by the top-of-the-line Qualcomm Snapdragon 845 processor in 2018, with 8GB of RAM and 256GB of storage. It featured a dual SIM tray, VOOC fast charging technology, a 3730mAh battery, a 20MP+16MP dual camera on the back, and a 25MP front camera. Notably, the device's fast charging technology set a new standard for charging speed and paved the way for even more advanced versions, such as those found in the OPPO FIND X 2. </p>
-
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-                </div>
-            </div>
-        </section><!-- End Blog Single Section -->
-
-    </main><!-- End #main -->
+    </main>
 
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="copyright-box">
-                        <p class="copyright">&copy; Copyright <strong>burakerdilli</strong>. All Rights Reserved</p>
-                        <div class="credits">
-
-                            Designed by <a href="https://github.com/BurakErdilli/burakerdilli.github.io" target="_blank">Burak Erdilli</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>&copy; Copyright <strong>burakerdilli</strong>. All Rights Reserved</p>
+            <p>Designed by <a href="https://github.com/BurakErdilli/burakerdilli.github.io" target="_blank">Burak Erdilli</a></p>
         </div>
     </footer>
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-    <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -182,7 +373,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
